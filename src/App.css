@@ -1,0 +1,6 @@
+.app {
+    background: url("assets/images/dp_with_more_top.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
