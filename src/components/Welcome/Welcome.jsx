@@ -21,11 +21,11 @@ export default function About() {
                         My name is Vatsal Gor and I'm a software developer. I
                         live in Auckland and belong to India. I like to spend
                         most of my time developing software and web
-                        applications. I'm a bookaholic and spend most of my free
-                        time reading books of various genres. On long weekends,
-                        I like to visit unexplored trails and sometimes like to
-                        do adventerous activities as well. Hope you will enjoy
-                        your time here :)
+                        applications. I'm a bookaholic and pass time by reading
+                        books of various genres. On long weekends, I like to
+                        visit unexplored trails and sometimes like to do
+                        adventerous activities as well. Hope you will enjoy your
+                        time here :)
                     </p>
                     <div className="float-right">
                         <SocialLinks></SocialLinks>

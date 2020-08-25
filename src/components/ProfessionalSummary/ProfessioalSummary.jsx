@@ -11,33 +11,33 @@ export default function ProjectSection() {
                     <li>
                         Above 1 year experience in building websites, mobile
                         applications and desktop applications using various
-                        programming tools
+                        programming tools.
                     </li>
                     <li>
                         Fullstack web developer working with NodeJS, React,
-                        Angular and Docker
+                        Angular and Docker.
                     </li>
                     <li>
                         Keen interest in latest advancements in Artificial
-                        Intelligence, Machine Learning and Computer Vision
+                        Intelligence, Machine Learning and Computer Vision.
                     </li>
                     <li>
                         Flexible, adaptable to any new environment with a strong
                         desire to keep pace with latest technologies using and
-                        technical skills
+                        technical skills.
                     </li>
                     <li>
                         Self-motivated, quick learner and having experience in
-                        working with Agile Team
+                        working with Agile Team.
                     </li>
                     <li>
                         Strictly follow SDLC methods and experience in working
-                        with diverse personalities to achieve the desired goal
+                        with diverse personalities to achieve the desired goal.
                     </li>
                     <li>
                         Experience in handling customer and complaints, root
                         cause analysis and quickly and decisively take
-                        preventive and corrective actions
+                        preventive and corrective actions.
                     </li>
                 </ul>
                 <div className="text-center">
