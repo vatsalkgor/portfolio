@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import AboutPic from "../../assets/images/about_cropped.jpg";
-import "./About.css";
+import "./Welcome.css";
 import SocialLinks from "../SocialLinks/SocialLinks";
 
 export default function About() {
