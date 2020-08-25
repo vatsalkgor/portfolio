@@ -13,7 +13,7 @@ export default function Future() {
                 <p>
                     Now, you would say, what's wrong with Facebook, Instagram
                     and other platforms? Well, as a matter of fact, I don't
-                    trust these companies with my private data. And I'm alomst
+                    trust these companies with my private data. And I'm almost
                     inactive on these sites.
                 </p>
                 <p>

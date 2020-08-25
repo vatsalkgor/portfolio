@@ -24,7 +24,7 @@ export default function About() {
                         applications. I'm a bookaholic and pass time by reading
                         books of various genres. On long weekends, I like to
                         visit unexplored trails and sometimes like to do
-                        adventerous activities as well. Hope you will enjoy your
+                        adventurous activities as well. Hope you will enjoy your
                         time here :)
                     </p>
                     <div className="float-right">
