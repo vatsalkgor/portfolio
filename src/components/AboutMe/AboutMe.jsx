@@ -3,7 +3,10 @@ import { Row, Col } from "react-bootstrap";
 
 export default function AboutMe() {
     return (
-        <Row className="description d-flex align-items-center">
+        <Row
+            style={{ padding: "20px" }}
+            className="description d-flex align-items-center"
+        >
             <Col md={{ span: 6, offset: 3 }} sm={12}>
                 <h5>More things about Me!</h5>
                 <p>
