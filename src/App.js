@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import About from "./components/Welcome/Welcome";
 import ProjectSection from "./components/ProfessionalSummary/ProfessioalSummary";
 import AboutMe from "./components/AboutMe/AboutMe";
+import Future from "./components/Future/Future";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <About></About>
             <ProjectSection></ProjectSection>
             <AboutMe></AboutMe>
+            <Future />
         </React.Fragment>
     );
 }
