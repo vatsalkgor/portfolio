@@ -6,7 +6,7 @@ import "./ProfessionalSummary.css";
 export default function ProfessionalSummary() {
     return (
         <div className="professional-summary">
-            <Row className="d-flex align-items-center">
+            <Row className="description d-flex align-items-center">
                 <Col md={{ span: 6, offset: 3 }} sm={12}>
                     <h5>Professional Summary</h5>
                     <ul>
