@@ -2,6 +2,7 @@ import React from "react";
 import "./Blurb.css";
 import { Button } from "react-bootstrap";
 import { IoIosArrowDown } from "react-icons/io";
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function Blurb() {
     return (
@@ -15,9 +16,11 @@ export default function Blurb() {
                     Software Engineer | Bibliophile | Adventurer
                 </span>
             </p>
-            <Button size="lg" className="button">
-                Know Me More <IoIosArrowDown></IoIosArrowDown>
-            </Button>
+            <Link smooth to="/#about">
+                <Button size="lg" className="button">
+                    Know Me More <IoIosArrowDown></IoIosArrowDown>
+                </Button>
+            </Link>
         </div>
     );
 }

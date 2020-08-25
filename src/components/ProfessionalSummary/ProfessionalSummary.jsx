@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col, Button } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
 
-export default function ProjectSection() {
+export default function ProfessionalSummary() {
     return (
         <Row className="description d-flex align-items-center">
             <Col md={{ span: 6, offset: 3 }} sm={12}>
