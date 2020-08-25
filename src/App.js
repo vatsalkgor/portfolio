@@ -6,6 +6,7 @@ import About from "./components/Welcome/Welcome";
 import ProjectSection from "./components/ProfessionalSummary/ProfessioalSummary";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Future from "./components/Future/Future";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <ProjectSection></ProjectSection>
             <AboutMe></AboutMe>
             <Future />
+            <Footer></Footer>
         </React.Fragment>
     );
 }
