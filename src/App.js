@@ -3,7 +3,7 @@ import "./App.css";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import About from "./components/Welcome/Welcome";
-import ProjectSection from "./components/ProjectSection/ProjectSection";
+import ProjectSection from "./components/ProfessionalSummary/ProfessioalSummary";
 
 function App() {
     return (
