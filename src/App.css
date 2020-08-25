@@ -1,6 +1,13 @@
 .app {
-    background: url("assets/images/dp_with_more_top.png");
-    background-repeat: no-repeat;
+    background: url("assets/images/dp_desktop.jpg");
     background-size: cover;
+    background-position: initial;
     height: 100vh;
+}
+@media screen and (max-width: 800px) {
+    .app {
+        background: url("assets/images/dp_mobile_less_top.png");
+        background-position: center;
+        background-size: cover;
+    }
 }

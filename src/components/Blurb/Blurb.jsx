@@ -1,25 +1,23 @@
 import React from "react";
-import Typist from "react-typist";
 import "./Blurb.css";
-import "react-typist/dist/Typist.css";
+import { Button } from "react-bootstrap";
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function Blurb() {
     return (
         <div className="blurb">
-            <Typist
-                startDelay={2000}
-                avgTypingDelay={40}
-                cursor={{ hideWhenDone: true }}
-            >
-                Vatsal is
+            <p>
+                <span className="heading">
+                    Indian by Heart, Global by Spirit.
+                </span>
                 <br />
-                <Typist.Delay ms={500}></Typist.Delay>* An Enthusiast Software
-                Developer
-                <br />
-                <Typist.Delay ms={500}></Typist.Delay>* An Amature Writer
-                <br />
-                <Typist.Delay ms={500}></Typist.Delay>* An Adventurer
-            </Typist>
+                <span className="subheading">
+                    Software Engineer | Bibliophile | Adventurer
+                </span>
+            </p>
+            <Button size="lg" className="button">
+                Know Me More <IoIosArrowDown></IoIosArrowDown>
+            </Button>
         </div>
     );
 }

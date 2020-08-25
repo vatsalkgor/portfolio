@@ -1,10 +1,31 @@
 .blurb {
     font-family: Helvetica, sans-serif;
-    font-size: 30px;
     color: rgb(38, 51, 78);
+    text-align: center;
 }
-@media screen and (max-width: 600px) {
-    .blurb {
-        font-size: 20px;
+.heading {
+    font-size: 22px;
+}
+.subheading {
+    font-size: 18px;
+}
+.button,
+.button:hover,
+.button:focus,
+.button:active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+    background: transparent;
+    border-width: 0px;
+    border-color: transparent;
+    color: rgb(38, 51, 78);
+    box-shadow: none;
+}
+@media screen and (max-width: 800px) {
+    .heading {
+        font-size: 18px;
+    }
+    .subheading {
+        font-size: 16px;
     }
 }
