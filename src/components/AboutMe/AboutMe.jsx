@@ -23,7 +23,7 @@ export default function AboutMe() {
                         animateIn="lightSpeedInLeft"
                         animateOut="lightSpeedOutLeft"
                     >
-                        <Card style={{ width: "35rem" }}>
+                        <Card className="aboutme-pic">
                             <Card.Img src={AboutMePic}></Card.Img>
                         </Card>
                     </ScrollAnimation>
@@ -32,6 +32,7 @@ export default function AboutMe() {
                     <ScrollAnimation
                         animateIn="lightSpeedInRight"
                         animateOut="lightSpeedOutRight"
+                        offset={50}
                     >
                         <p>
                             I'm a fun loving person with an optimist mindset. I

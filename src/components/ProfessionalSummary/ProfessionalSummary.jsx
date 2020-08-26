@@ -9,6 +9,7 @@ export default function ProfessionalSummary() {
             <Row className="description d-flex align-items-center">
                 <Col md={{ span: 6, offset: 3 }} sm={12}>
                     <ScrollAnimation
+                        offset={50}
                         animateIn="slideInLeft"
                         animateOut="slideOutLeft"
                     >
@@ -53,8 +54,6 @@ export default function ProfessionalSummary() {
                                 take preventive and corrective actions.
                             </li>
                         </ul>
-                    </ScrollAnimation>
-                    <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut">
                         <div className="text-center">
                             <Button variant="dark">Explore My Projects</Button>
                         </div>
