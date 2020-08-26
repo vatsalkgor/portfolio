@@ -1,8 +1,8 @@
 .about {
-    background-color: #c8cfd0;
+    background-color: white;
     padding: 20px;
+    margin: 0px;
 }
 .description {
-    margin: 20px;
     text-align: justify;
 }

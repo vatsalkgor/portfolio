@@ -1,6 +1,5 @@
 import React from "react";
 import { Row, Col, Button } from "react-bootstrap";
-import { FaSearch } from "react-icons/fa";
 import "./ProfessionalSummary.css";
 
 export default function ProfessionalSummary() {
@@ -44,10 +43,7 @@ export default function ProfessionalSummary() {
                         </li>
                     </ul>
                     <div className="text-center">
-                        <Button variant="primary">
-                            Explore My Projects &nbsp;&nbsp;
-                            <FaSearch />
-                        </Button>
+                        <Button variant="dark">Explore My Projects</Button>
                     </div>
                 </Col>
             </Row>

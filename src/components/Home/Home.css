@@ -2,6 +2,7 @@
     background: url("../../assets/images/dp_desktop.jpg");
     background-size: cover;
     background-position: initial;
+    background-attachment: fixed;
     height: 100vh;
 }
 @media screen and (max-width: 800px) {

@@ -1,13 +1,21 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Card } from "react-bootstrap";
 import "./AboutMe.css";
+import AboutMePic from "../../assets/images/aboutme.JPG";
 
 export default function AboutMe() {
     return (
         <div className="aboutme">
             <Row className="description d-flex align-items-center">
-                <Col md={{ span: 6, offset: 3 }} sm={12}>
-                    <h5>More things about Me!</h5>
+                <Col md={12} sm={12} className="d-flex justify-content-center">
+                    <h5>More about Me!</h5>
+                </Col>
+                <Col md={6} sm={12} className="d-flex justify-content-center">
+                    <Card style={{ width: "35rem" }}>
+                        <Card.Img src={AboutMePic}></Card.Img>
+                    </Card>
+                </Col>
+                <Col md={6} sm={12}>
                     <p>
                         I'm a fun loving person with an optimist mindset. I
                         occasionally listen to Indian Classical and Bollywood
