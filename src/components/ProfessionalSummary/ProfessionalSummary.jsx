@@ -37,7 +37,8 @@ export default function ProfessionalSummary() {
                             <li>
                                 Flexible, adaptable to any new environment with
                                 a strong desire to keep pace with latest
-                                technologies using and technical skills.
+                                technologies using excellent communication and
+                                technical skills.
                             </li>
                             <li>
                                 Self-motivated, quick learner and having
