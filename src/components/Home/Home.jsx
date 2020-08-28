@@ -6,20 +6,18 @@ import About from "../Welcome/Welcome";
 import ProfessionalSummary from "../ProfessionalSummary/ProfessionalSummary";
 import AboutMe from "../AboutMe/AboutMe";
 import Future from "../Future/Future";
-import Footer from "../Footer/Footer";
 
 export default function Home() {
     return (
         <>
             <div className="app">
-                <Navigation />
+                <Navigation transparent={true} />
                 <Title />
             </div>
             <About />
             <ProfessionalSummary />
             <AboutMe />
             <Future />
-            <Footer />
         </>
     );
 }
