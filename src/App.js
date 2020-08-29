@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 // compat.css is used because the animate.css has breaking
 // changes which causes no animation at all
 import "animate.css/animate.compat.css";
-
+import "./App.css";
 function App() {
     return (
         <BrowserRouter>
