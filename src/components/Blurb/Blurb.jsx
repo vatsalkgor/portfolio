@@ -17,7 +17,7 @@ export default function Blurb() {
                 </span>
             </p>
             <Link smooth to="/#about">
-                <Button size="lg" className="button">
+                <Button size="lg" variant="light" className="button">
                     Know Me More <IoIosArrowDown></IoIosArrowDown>
                 </Button>
             </Link>
