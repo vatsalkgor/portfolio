@@ -1,7 +1,21 @@
 version: 2.1
-orbs:
-    node: circleci/node@4.0
-workflows:
-    node-tests:
-        jobs:
-            - node/test
+
+jobs:
+    test:
+        docker:
+            - image: cimg/node:14.2.0
+        steps:
+            - checkout
+            - restore_cache:
+                  keys:
+                      - node-deps-v1-{{ .Branch }}-{{checksum "package.json"}}
+            - run:
+                  name: install packages
+                  command: npm ci
+            - save_cache:
+                  key: node-deps-v1-{{ .Branch }}-{{checksum "package.json"}}
+                  paths:
+                      - ~/.npm
+            - run:
+                  name: Run Tests
+                  command: npm run test
