@@ -9,14 +9,18 @@ export default function Navigation({ children, transparent }) {
                 expand="lg"
                 style={{ background: "transparent" }}
             >
-                <Navbar.Brand style={{ color: "rgb(38, 51, 78)" }} href="/">
+                <Navbar.Brand style={{ color: "black" }} href="/">
                     Vatsal Gor
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="/projects">Projects</Nav.Link>
-                        <Nav.Link href="/blogs">Blogs</Nav.Link>
+                        <Nav.Link style={{ color: "black" }} href="/projects">
+                            Projects
+                        </Nav.Link>
+                        <Nav.Link style={{ color: "black" }} href="/blogs">
+                            Blogs
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

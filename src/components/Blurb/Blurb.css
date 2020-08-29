@@ -1,6 +1,6 @@
 .blurb {
     font-family: Helvetica, sans-serif;
-    color: rgb(38, 51, 78);
+    color: black;
     text-align: center;
 }
 .heading {
@@ -13,12 +13,12 @@
 .button:hover,
 .button:focus,
 .button:active,
-.btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:not(:disabled):not(.disabled):active:focus {
+.btn-light:not(:disabled):not(.disabled):active,
+.btn-light:not(:disabled):not(.disabled):active:focus {
     background: transparent;
     border-width: 0px;
     border-color: transparent;
-    color: rgb(38, 51, 78);
+    color: black;
     box-shadow: none;
 }
 @media screen and (max-width: 800px) {
