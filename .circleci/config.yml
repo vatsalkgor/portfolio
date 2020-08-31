@@ -44,7 +44,7 @@ workflows:
     test_build:
         jobs:
             - test
-            - build:
+            - build_deploy:
                   filters:
                       branches:
                           only:
