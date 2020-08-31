@@ -19,12 +19,6 @@ jobs:
             - run:
                   name: Run Tests
                   command: npm run test
-            - run:
-                  name: build job
-                  command: npm run build
-            - run:
-                  name: Deploy Master to Firebase
-                  command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
     build:
         docker:
             - image: cimg/node:14.2.0
@@ -43,9 +37,6 @@ jobs:
             - run:
                   name: build job
                   command: npm run build
-            - run:
-                  name: Deploy Master to Firebase
-                  command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
     deploy:
         docker:
             - image: cimg/node:14.2.0
@@ -68,7 +59,7 @@ workflows:
     test_build:
         jobs:
             - test
-            # - build:
+            - build
             #       - requires:
             #             - test
             # - deploy:
