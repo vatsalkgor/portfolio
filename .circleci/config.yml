@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-    test:
+    test_deploy:
         docker:
             - image: cimg/node:14.2.0
         steps:
@@ -19,33 +19,14 @@ jobs:
             - run:
                   name: Run Tests
                   command: npm run test
-    build-job:
-        docker:
-            - image: cimg/node:14.2.0
-        steps:
-            - checkout
             - run:
                   name: build job
                   command: npm run build
-
-    deployment-job:
-        docker:
-            - image: cimg/node:14.2.0
-        steps:
-            - checkout
             - run:
                   name: Deploy Master to Firebase
                   command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
+
 workflows:
-    test_my_app:
+    test_build_deploy:
         jobs:
-            - test
-    deploy:
-        jobs:
-            - build-job
-            - deployment-job:
-                  requires:
-                      - build-job
-                  filters:
-                      branches:
-                          only: master
+            - test_deploy
