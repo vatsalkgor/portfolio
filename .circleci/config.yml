@@ -23,6 +23,7 @@ jobs:
         docker:
             - image: cimg/node:14.2.0
         steps:
+            - checkout
             - run:
                   name: build job
                   command: npm run build
@@ -31,6 +32,7 @@ jobs:
         docker:
             - image: cimg/node:14.2.0
         steps:
+            - checkout
             - run:
                   name: Deploy Master to Firebase
                   command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
