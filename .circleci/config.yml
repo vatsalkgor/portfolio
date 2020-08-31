@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-    test_deploy:
+    test:
         docker:
             - image: cimg/node:14.2.0
         steps:
@@ -25,8 +25,56 @@ jobs:
             - run:
                   name: Deploy Master to Firebase
                   command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
-
+    build:
+        docker:
+            - image: cimg/node:14.2.0
+        steps:
+            - checkout
+            - restore_cache:
+                  keys:
+                      - node-deps-v1-{{ .Branch }}-{{checksum "package.json"}}
+            - run:
+                  name: install packages
+                  command: npm i
+            - save_cache:
+                  key: node-deps-v1-{{ .Branch }}-{{checksum "package.json"}}
+                  paths:
+                      - ~/.npm
+            - run:
+                  name: build job
+                  command: npm run build
+            - run:
+                  name: Deploy Master to Firebase
+                  command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
+    deploy:
+        docker:
+            - image: cimg/node:14.2.0
+        steps:
+            - checkout
+            - restore_cache:
+                  keys:
+                      - node-deps-v1-{{ .Branch }}-{{checksum "package.json"}}
+            - run:
+                  name: install packages
+                  command: npm i
+            - save_cache:
+                  key: node-deps-v1-{{ .Branch }}-{{checksum "package.json"}}
+                  paths:
+                      - ~/.npm
+            - run:
+                  name: Deploy Master to Firebase
+                  command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
 workflows:
-    test_build_deploy:
+    test_build:
         jobs:
-            - test_deploy
+            - test
+            - build:
+                  - requires:
+                        - test
+            - deploy:
+                  - requires:
+                        - build
+                    filters:
+                        branches:
+                            only:
+                                - master
