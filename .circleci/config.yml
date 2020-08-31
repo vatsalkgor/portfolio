@@ -44,11 +44,11 @@ workflows:
     test_build:
         jobs:
             - test
-            - build
-                filters:
-                    branches:
-                        only:
-                            - master
+            - build:
+                  filters:
+                      branches:
+                          only:
+                              - master
             #       - requires:
             #             - test
             # - deploy:
