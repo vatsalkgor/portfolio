@@ -79,10 +79,10 @@ export default function ProjectModal({ show, handleClose, project }) {
                             <div className="subheading">
                                 <b>Work sample</b>
                             </div>
-                            <GridGenerator cols={3}>
-                                {project.images.map((link, i) => (
+                            <GridGenerator cols={project.images.cols}>
+                                {project.images.links.map((link, i) => (
                                     <Card style={{ margin: "16px" }} key={i}>
-                                        <Card.Img src={link} />
+                                        <Card.Img src={link} width="100%" />
                                     </Card>
                                 ))}
                             </GridGenerator>
