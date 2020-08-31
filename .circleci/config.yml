@@ -19,7 +19,27 @@ jobs:
             - run:
                   name: Run Tests
                   command: npm run test
+    build-job:
+        steps:
+            - run:
+                  name: build job
+                  command: npm run build
+
+    deployment-job:
+        steps:
+            - run:
+                  name: Deploy Master to Firebase
+                  command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
 workflows:
     test_my_app:
         jobs:
             - test
+    deploy:
+        jobs:
+            - build-job
+            - deployment-job:
+                  requires:
+                      - build-job
+                  filters:
+                      branches:
+                          only: master
