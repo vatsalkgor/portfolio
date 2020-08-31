@@ -20,8 +20,9 @@ export default function Tile({ project, setModalProps }) {
                     ))}
                 </ul>
             </div>
-            <div className="float-right">
+            <div className="footer-card">
                 <Button
+                    className="float-right"
                     variant="dark"
                     onClick={() => {
                         setModalProps({ show: true, project: project });
