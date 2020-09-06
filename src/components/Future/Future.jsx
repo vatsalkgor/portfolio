@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Button } from "react-bootstrap";
 import "./Future.css";
+import { Link } from "react-router-dom";
 
 export default function Future() {
     return (
@@ -30,7 +31,9 @@ export default function Future() {
                         readers.
                     </p>
                     <div className="text-center">
-                        <Button variant="dark">Go to Blogs</Button>
+                        <Link to="/blogs">
+                            <Button variant="dark">Go to Blogs</Button>
+                        </Link>
                     </div>
                 </Col>
             </Row>
