@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./ProfessionalSummary.css";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -56,7 +57,11 @@ export default function ProfessionalSummary() {
                             </li>
                         </ul>
                         <div className="text-center">
-                            <Button variant="dark">Explore My Projects</Button>
+                            <Link to="/projects">
+                                <Button variant="dark">
+                                    Explore My Projects
+                                </Button>
+                            </Link>
                         </div>
                     </ScrollAnimation>
                 </Col>
