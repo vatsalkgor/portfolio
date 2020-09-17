@@ -18,12 +18,12 @@ export default function Blogs() {
                         <div className="text-center">
                             <div className="heading">Blogs Coming Soon!</div>
                             <div className="subheading">
-                                1<sup>st</sup> blog releasing on 12<sup>th</sup>{" "}
+                                1<sup>st</sup> blog releasing on 25<sup>th</sup>{" "}
                                 Sept 2020.
                             </div>
                             <div>
                                 <Countdown
-                                    date={1599912000000}
+                                    date={1600992000000}
                                     renderer={countdownRenderer}
                                 ></Countdown>
                             </div>
