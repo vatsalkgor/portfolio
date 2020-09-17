@@ -1,6 +1,6 @@
 import React from "react";
 import "./Tile.css";
-import { Button } from "react-bootstrap";
+import { Button, Badge } from "react-bootstrap";
 
 export default function Tile({ project, setModalProps }) {
     return (
@@ -21,6 +21,16 @@ export default function Tile({ project, setModalProps }) {
                 </ul>
             </div>
             <div className="footer-card">
+                {project.badges && (
+                    <h5 className="float-left">
+                        {project.badges.map((val, i) => (
+                            <>
+                                <Badge variant="info">{val}</Badge>{" "}
+                            </>
+                        ))}
+                    </h5>
+                )}
+
                 <Button
                     className="float-right"
                     variant="dark"
