@@ -1,7 +1,6 @@
 import React from "react";
 import Navigation from "../Navigation";
 import { Container, Row, Col } from "react-bootstrap";
-import Countdown from "react-countdown";
 import "./Blogs.css";
 
 export default function Blogs() {
