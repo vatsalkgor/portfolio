@@ -23,16 +23,3 @@ export default function Blogs() {
         </div>
     );
 }
-
-const countdownRenderer = ({ days, hours, minutes, seconds, completed }) => {
-    if (completed) {
-        return <div>Here you go!</div>;
-    } else {
-        return (
-            <span>
-                {days} Days {hours} Hours {minutes} Minutes {seconds} Seconds
-                Remaining!
-            </span>
-        );
-    }
-};
