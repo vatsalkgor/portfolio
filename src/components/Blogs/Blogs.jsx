@@ -17,16 +17,6 @@ export default function Blogs() {
                     >
                         <div className="text-center">
                             <div className="heading">Blogs Coming Soon!</div>
-                            <div className="subheading">
-                                1<sup>st</sup> blog releasing on 25<sup>th</sup>{" "}
-                                Sept 2020.
-                            </div>
-                            <div>
-                                <Countdown
-                                    date={1600992000000}
-                                    renderer={countdownRenderer}
-                                ></Countdown>
-                            </div>
                         </div>
                     </Col>
                 </Row>
